@@ -1,10 +1,10 @@
 import { aspectRatio } from '../utils/math';
 
-export default function KeyFeatures({ data: propsData }) {
-	if (!propsData) return;
+export default function KeyFeatures({ data }) {
+	if (!data) return;
 
-	const screenWidth = propsData['screenWidth'];
-	const screenHeight = propsData['screenHeight'];
+	const screenWidth = data['screenWidth'];
+	const screenHeight = data['screenHeight'];
 	const screenAspectRatio = aspectRatio(screenWidth, screenHeight);
 
 	return (

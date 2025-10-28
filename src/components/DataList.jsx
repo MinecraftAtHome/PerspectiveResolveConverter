@@ -1,10 +1,10 @@
-export default function DataList({ data: propsData }) {
-	if (!propsData) return;
+export default function DataList({ data }) {
+	if (!data) return;
 
 	return (
 		<ul>
-			{Object.keys(propsData).map((key) => {
-				const value = propsData[key];
+			{Object.keys(data).map((key) => {
+				const value = data[key];
 				if (Array.isArray(value)) return;
 
 				return (
